@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:gravity="center_vertical"
+	android:paddingLeft="7dip"
+	android:paddingRight="7dip"
+	android:layout_margin="10dp">
+	<LinearLayout 
+			android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+			android:orientation="vertical"
+	        android:layout_weight="1"
+			>
+ 	<TableLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:stretchColumns="1" 
+	        >
+	        <TableRow >
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:text="用处：" />
+	            <EditText
+	                android:id="@+id/orders_use"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:hint="用处"
+					android:inputType="text"
+					android:onClick="setTextUsage"/>
+	        </TableRow>
+	        <TableRow >
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:text="备注：" />
+	            <EditText
+	                android:id="@+id/orders_remark"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:lines="3"
+	                android:hint="备注" />
+	        </TableRow>
+	       
+	        <TableRow >
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:text="金额：" />
+	            <EditText
+	                android:id="@+id/orders_money"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:hint="金额"
+					android:inputType="number|numberDecimal"/>
+	        </TableRow>
+	        <TableRow >
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:text="时间：" />
+	            <EditText
+	                android:id="@+id/orders_date"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:hint="时间"
+					android:focusable="false"/>
+	        </TableRow>	       
+	    	
+	    </TableLayout>	
+	    <TableLayout 
+	    	 android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:stretchColumns="1" >
+	     <TableRow >
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:text="收入/支出："
+	                android:textSize="20dp" />
+	            <RadioGroup
+	                android:id="@+id/orders_in_out"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:checkedButton="@+id/woman"
+	                android:orientation="horizontal" >
+	                <RadioButton
+	                    android:id="@+id/in"
+	                    android:text="收入" />
+	                <RadioButton
+	                    android:id="@+id/out"
+	                    android:text="支出" />
+	            </RadioGroup>
+	        </TableRow>
+	    </TableLayout>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:onClick="selectDate"
+				android:text="选择日期"
+				android:background="@drawable/btn_bgd"
+				android:layout_margin="10dp"
+				android:textColor="@color/white"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:onClick="selectTime"
+				android:text="选择时间"
+				android:background="@drawable/btn_bgd"
+				android:layout_margin="10dp"
+				android:textColor="@color/white"/>
+		</LinearLayout>
+	 </LinearLayout>
+	 <LinearLayout 
+	 	android:layout_width="fill_parent"
+	 	android:layout_marginTop="5dip"
+	 	android:layout_height="wrap_content"
+	 	>
+		 	<Button 
+			 	android:id="@+id/save_update"
+			 	android:layout_width="fill_parent"
+			 	android:text="保存" android:layout_height="wrap_content"
+			 	android:onClick="bt_SaveUpdate"
+			 	android:layout_weight="1"
+				android:background="@drawable/btn_bgd"
+				android:textColor="@color/white"
+				android:textSize="18sp"
+				android:layout_margin="10dp"/>
+		 	<Button 
+		 		android:id="@+id/orders_del"
+			 	android:layout_width="fill_parent"
+			 	android:text="删除" android:layout_height="wrap_content"
+			 	android:onClick="bt_Del"
+			 	android:layout_weight="1"
+				android:background="@drawable/btn_bgd"
+				android:textColor="@color/white"
+				android:textSize="18sp"
+				android:layout_margin="10dp"/>
+	 </LinearLayout>
+</LinearLayout>

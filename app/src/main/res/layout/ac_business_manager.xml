@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+	/*	@author：
+	 *	登录界面
+	 */
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/main_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <cn.edu.infomanager.view.RoundImageView
+                android:id="@+id/poto"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/img_usr2" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="用户名" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/btn_bgd_yellow"
+                    android:onClick="bt_InfoManager"
+                    android:text="用户信息管理"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_margin="2dp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/btn_bgd"
+                    android:onClick="bt_Memorandum"
+                    android:text="备忘录管理"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_margin="2dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/btn_bgd"
+                    android:onClick="bt_Contacts"
+                    android:text="通讯录信息"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_margin="2dp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/btn_bgd_red"
+                    android:onClick="bt_Orders"
+                    android:text="收支信息"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_margin="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/btn_bgd_green"
+                    android:onClick="bt_Blog"
+                    android:text="日志"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_margin="2dp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/btn_bgd"
+                    android:onClick="bt_Workplan"
+                    android:text="工作规划"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:visibility="gone"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/btn_bgd_gray"
+                    android:textSize="18sp"
+                    android:layout_margin="2dp" />
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_bgd"
+        android:onClick="bt_LogOut"
+        android:text="退出当前帐号"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</LinearLayout>

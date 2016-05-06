@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	/*	@author：
+	 *	收支信息
+	 */
+ -->
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:layout_margin="10dp"
+	android:gravity="center_horizontal">
+	<ListView 
+		android:id="@+id/lv_workplan"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1.0"
+		>
+	</ListView>
+
+
+	<Button
+		android:layout_width="50dp"
+		android:layout_height="wrap_content"
+		android:onClick="btAdd"
+		android:text="+"
+		android:textSize="25sp"
+		android:textColor="@color/white"
+		android:background="@drawable/btn_add_bgd"/>
+</LinearLayout>

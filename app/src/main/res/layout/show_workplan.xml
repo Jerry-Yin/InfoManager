@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:gravity="center_vertical"
+	android:paddingLeft="7dip"
+	android:paddingRight="7dip"
+	android:layout_margin="10dp">
+	<LinearLayout 
+			android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+			android:orientation="vertical"
+	        android:layout_weight="1"
+			>
+ 	<TableLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:stretchColumns="1" 
+	        >
+	        <TableRow >
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:text="工作：" />
+	            <EditText
+	                android:id="@+id/orders_use"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:hint="工作内容" />
+	        </TableRow>
+	        <TableRow >
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:text="备注：" />
+	            <EditText
+	                android:id="@+id/orders_remark"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:lines="3"
+	                android:hint="备注" />
+	        </TableRow>
+	       
+	        <TableRow >
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:text="时间：" />
+	            <EditText
+	                android:id="@+id/orders_money"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:hint="时间" />
+	        </TableRow>
+	        <TableRow >
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:text="耗时：" />
+	            <EditText
+	                android:id="@+id/orders_date"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:hint="多长时间完成" />
+	        </TableRow>	       
+	    	
+	    </TableLayout>	
+	 </LinearLayout>
+	 <LinearLayout 
+	 	android:layout_width="fill_parent"
+	 	android:layout_marginTop="5dip"
+	 	android:layout_height="wrap_content"
+	 	>
+		 	<Button 
+			 	android:id="@+id/save_update"
+			 	android:layout_width="fill_parent"
+			 	android:text="保存" android:layout_height="wrap_content"
+			 	android:onClick="bt_SaveUpdate"
+			 	android:layout_weight="1"
+				android:background="@drawable/btn_bgd"
+				android:textColor="@color/white"
+				android:textSize="18sp"
+				android:layout_margin="10dp"/>
+		 	<Button 
+		 		android:id="@+id/work_del"
+			 	android:layout_width="fill_parent"
+			 	android:text="删除" android:layout_height="wrap_content"
+			 	android:onClick="bt_Del"
+			 	android:layout_weight="1"
+				android:background="@drawable/btn_bgd"
+				android:textColor="@color/white"
+				android:textSize="18sp"
+				android:layout_margin="10dp"/>
+	 </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+	/*	@author：
+	 *	登录界面
+	 */
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lv_infos"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:layout_weight="1.0"></ListView>
+    <!--android:descendantFocusability="beforeDescendants"-->
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_add_bgd"
+        android:onClick="btAdd"
+        android:text="+"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+    <!--
+        <Button
+            android:onClick="btTest"
+            android:layout_weight="1.0"
+            android:layout_width="wrap_content" android:text="Button" android:id="@+id/button1" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_marginLeft="76dp" android:layout_marginTop="138dp"></Button>
+
+    -->
+</LinearLayout>
